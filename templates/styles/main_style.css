@@ -1,0 +1,121 @@
+body{
+    font-family: 'IBM Plex Sans';
+    background: url("https://img2.akspic.ru/crops/3/1/9/5/7/175913/175913-uzor-chernyj_i_belyj-dizajn-seryj_cvet-art-1920x1080.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-size: 100%;
+    margin:0;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1920px;
+}
+
+.navigation{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+}
+
+.form_nav{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo{
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.wrapper{
+    display: flex;
+    margin: 0; 
+    height:900px;
+    width: 1920px;
+}
+
+.my_lib{
+    height:100%;
+    width: 20%;
+    margin-top: 0.25%;
+    margin-left: 1.75%;
+    margin-right: 0.25%;
+    background-color: rgba(37, 40, 46, 0.9);
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.my_lib:hover{
+    background-color: rgba(37, 40, 46);
+    transition: 0.3s;
+}
+
+.recomendations{
+    height:100%;
+    width: 76%;
+    margin-left: 0.25%;
+    margin-top: 0.25%;
+    margin-right: 1.75%;
+    background-color: rgba(37, 40, 46, 0.9);
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.recomendations:hover{
+    background-color: rgba(37, 40, 46);
+    transition: 0.3s;
+}
+
+.text-header{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 175%;
+    font-weight: bold;
+}
+
+.wave-text {
+    margin:0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1.5%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 2rem;
+    transition: transform 0.1s ease, color 0.1s ease;
+}
+
+.wave-text:hover span {
+    animation: wave 0.2s ease;
+}
+
+.wave-text span:nth-child(1) { animation-delay: 0s; }
+.wave-text span:nth-child(2) { animation-delay: 0.02s; }
+.wave-text span:nth-child(3) { animation-delay: 0.04s; }
+.wave-text span:nth-child(4) { animation-delay: 0.06s; }
+.wave-text span:nth-child(5) { animation-delay: 0.08s; }
+.wave-text span:nth-child(6) { animation-delay: 0.1s; }
+.wave-text span:nth-child(7) { animation-delay: 0.12s; }
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
