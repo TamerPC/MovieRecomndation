@@ -1,7 +1,6 @@
 import json
 import re
 
-
 class Tokenizer:
 
     def __init__(self, alphabet = "abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюяәіңғүұқөһ1234567890!@#$%^&*()_+=-?/>.<,`|\\\'\"[]{} "):
