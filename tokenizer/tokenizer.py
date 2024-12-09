@@ -3,7 +3,7 @@ import re
 
 class Tokenizer:
 
-    def __init__(self, alphabet = "abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюяәіңғүұқөһ1234567890!@#$%^&*()_+=-?/>.<,`|\\\'\"[]{} "):
+    def __init__(self, alphabet = "abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюяәіңғүұқөһ1234567890!@#$%^:&*()_+=-?/>.<,`|\\\'\"[]{} "):
 
         self.alphabet = alphabet
 
@@ -39,6 +39,8 @@ class Tokenizer:
             tokens = json.load(file)
 
         text = text.lower()
+        text2 = ''.join([char for char in text if char in self.alphabet])
+        text = text2
         text = [text[i:i+2] for i in range(0, len(text), 2)]
         encoded_text = []
         
@@ -46,7 +48,6 @@ class Tokenizer:
             encoded_text.append(tokens[el])
 
         return encoded_text
-
 
 
     def decode(self, encoded_text, tokens_dict_path_d):
