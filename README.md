@@ -1,0 +1,4 @@
+# Machine learning based simple movie recomendation system
+## python version 3.11.10
+---
+## Основные моменты
