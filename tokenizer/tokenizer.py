@@ -34,7 +34,7 @@ class Tokenizer:
             json.dump(result2, file, ensure_ascii=False, indent=4)
 
 
-    def encode(self, text, tokens_dict_path_e):
+    def encode(self, text, tokens_dict_path_e='tokenizer/tokens_encode.json'):
         with open(tokens_dict_path_e, 'r', encoding='utf-8') as file:
             tokens = json.load(file)
 
@@ -50,7 +50,7 @@ class Tokenizer:
         return encoded_text
 
 
-    def decode(self, encoded_text, tokens_dict_path_d):
+    def decode(self, encoded_text, tokens_dict_path_d='tokenizer/tokens_decode.json'):
         with open(tokens_dict_path_d, 'r', encoding='utf-8') as file:
             tokens = json.load(file)
 
