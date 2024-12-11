@@ -49,17 +49,20 @@
                     <div class="recomendations">
                         <p class="text-header">Recomendations</p>
                         <div class="recomendations_container">
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
-                            <div class="test"></div>
+                            {% for film in films %}
+                                <div class="movie_block">
+                                    <img src={{film[8]}} alt="" class="movie_img">
+                                    <div class="right">
+                                        <p class="movie_name">{{film[0]}}</p>
+                                        <span class="movie_tag">Год: </span><span class="movie_text">{{film[1]}}</span><br>
+                                        <span class="movie_tag">Страна: </span><span class="movie_text">{{film[2]}}</span><br>
+                                        <span class="movie_tag">Жанр: </span><span class="movie_text">{{film[3]}}</span><br>
+                                        <span class="movie_tag">Режиссёр: </span><span class="movie_text">{{film[5]}}</span><br><br>
+                                        <span class="movie_tag">Актёры: </span><span class="movie_text">{{film[6]}}</span><br><br>
+                                        <span class="movie_tag">Описание: </span><span class="movie_text">{{film[7]}}</span><br>
+                                    </div>
+                                </div>            
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
