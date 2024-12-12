@@ -9,13 +9,16 @@ with open("data/for_web.json", 'r', encoding='utf-8') as file:
 @app.route('/')
 def index():
     recomended_films = ["0", "1", "120", "1000", "3001", "3042", "210", "3", "4", "5", "12", "989"]
-
     films = []
-
     for rec in recomended_films:
         films.append(filmoteka[rec])
 
-    return render_template('index.html', films=films)
+    user_films = []
+    ufs=["3000", "3188", "3045", "1", "4", "826", "3381", "3380", "3379"]
+    for uf in ufs:
+        user_films.append(filmoteka[uf])
+
+    return render_template('index.html', films=films, user_films=user_films)
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5000)

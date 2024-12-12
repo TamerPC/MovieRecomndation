@@ -44,7 +44,14 @@
                 <div class="wrapper">
                     <div class="my_lib">
                         <p class="text-header">My films</p>
-                        <div class="my_films_container"></div>
+                        <div class="my_films_container">
+                            {% for user_film in user_films %}
+                                <div class="movie_block_my">
+                                    <img src={{user_film[8]}} alt="" class="movie_img_my">
+                                    <p class="movie_name_my">{{user_film[0]}}</p>
+                                </div>            
+                            {% endfor %}
+                        </div>
                     </div>
                     <div class="recomendations">
                         <p class="text-header">Recomendations</p>
