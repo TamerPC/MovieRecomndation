@@ -8,13 +8,13 @@ with open("data/for_web.json", 'r', encoding='utf-8') as file:
 
 @app.route('/')
 def index():
-    recomended_films = ["120","1274", "833", "1731", "1019", "134", "140", "1216", "960", "1178", "542"]
+    recomended_films = ["1343","1216", "1155"]
     films = []
     for rec in recomended_films:
         films.append(filmoteka[rec])
 
     user_films = []
-    ufs=["120"]
+    ufs=["18"]
     for uf in ufs:
         user_films.append(filmoteka[uf])
 

@@ -22,7 +22,14 @@
                     </div>
                     <form action="post" class="form_nav">
                         <input type="text" placeholder="Описание фильма" class="filmdescribe">
-                        <input placeholder="Жанры" class="select_genre">
+                        <select name="genre" class="select_genre">
+                            <option value="1">Аниме</option>
+                            <option value="2" selected>Драма</option>
+                            <option value="3">Комедия</option>
+                            <option value="4">Боевик</option>
+                            <option value="5">Вэстерн</option>
+                            <option value="6">Сериал</option>
+                        </select>
                         <select name="user" class="select_user">
                             <option value="1">user1</option>
                             <option value="2" selected>user2</option>
