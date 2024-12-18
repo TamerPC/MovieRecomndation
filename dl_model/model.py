@@ -15,8 +15,8 @@ dataset.append(np.array([0.0]*964))
 dataset = np.array(dataset)
 dataset = dataset /11990
 
-train_set = dataset[:2700]
-test_set = dataset[2700:]
+train_set = dataset[:10]
+test_set = dataset[3000:]
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -79,27 +79,43 @@ def vae_loss(x, y):
 vae.compile(optimizer='adam', loss=vae_loss)
 
 def train_model():
-  vae.fit(train_set, train_set, epochs=100, batch_size=batch_size, shuffle=True)
+  history = vae.fit(train_set, train_set, epochs=100, batch_size=batch_size, shuffle=True, validation_split=0.2)
+
+  plt.subplot(1, 2, 1)
+  plt.plot(history.history['loss'], label='Training Loss')
+  plt.plot(history.history['val_loss'], label='Validation Loss')
+  plt.title('Training and Validation Loss')
+  plt.xlabel('Epochs')
+  plt.ylabel('Loss')
+  plt.legend()
+  plt.show()
 
 
 def predict(data):
-  vae.load_weights("vae.h5")
-  encoder.load_weights("encoder.h5")
+  vae.load_weights("dl_model/vae.h5")
+  encoder.load_weights("dl_model/encoder.h5")
 
   data = np.array(data)
+  data = np.reshape(data, (1, 964)).astype(float)
+  return encoder.predict(np.reshape(data, (1, 964)).astype(float))
+  # return vae.predict(data)
 
-  return encoder.predict(np.reshape(data, (1, 964))[0].astype(float))
 
+def calc_accuracy(train=True):
+  res = []
 
+  if train:
+    for i in train_set:
+      res.append(predict(i))
+  else:
+    for i in test_set:
+      res.append(predict(i))
 
-def train_accuracy():
   accuracy = 0
-  for i in range(0,700):
-    threshold = 0.001
-    accuracy += round(np.mean((res[i]-test_set[i])**2<threshold))
+  for i in range(0,len(res)-1):
+    threshold = 0.01
+    accuracy += round(np.mean((res[i]-test_set[i])<threshold))
 
+  print(res)
 
-if __name__ == "__main__":
-  train_model()
-
-  train_accuracy()
+  return accuracy/len(res)

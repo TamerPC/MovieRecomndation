@@ -20,21 +20,19 @@
                     <div class = wave-text>
                         <span>M</span><span>a</span><span>v</span><span>e</span><span>r</span><span>i</span><span>k</span>
                     </div>
-                    <form action="post" class="form_nav">
-                        <input type="text" placeholder="Описание фильма" class="filmdescribe">
+                    <form action="/" method="POST" class="form_nav">
+                        <input type="text" placeholder="Описание фильма" class="filmdescribe" name="describe">
                         <select name="genre" class="select_genre">
-                            <option value="1">Аниме</option>
-                            <option value="2" selected>Драма</option>
-                            <option value="3">Комедия</option>
-                            <option value="4">Боевик</option>
-                            <option value="5">Вэстерн</option>
-                            <option value="6">Сериал</option>
+                            {% for genre in genres %}
+                                <option value={{genre[1]}}>{{genre[0]}}</option>
+                            {% endfor %}
                         </select>
                         <select name="user" class="select_user">
-                            <option value="1">user1</option>
-                            <option value="2" selected>user2</option>
-                            <option value="3">user3</option>
+                            {% for userid in users %}
+                                <option value="{{userid}}" {% if user == userid %}selected{% endif %}>user{{userid}}</option>
+                            {% endfor %}
                         </select>
+                        <button type="submit" class="sbmt">Find</button>
                     </form>
                 </nav>
             </div>
