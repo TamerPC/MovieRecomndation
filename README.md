@@ -73,10 +73,12 @@ Input: Film data (title, description, etc.).
 Process: The encoder learns to map the input data into a lower-dimensional space by minimizing reconstruction error.
 Output: A fixed-length vector representing the film.
 
-Formula for reconstruction error:![image](https://github.com/user-attachments/assets/1b9c9198-50da-42ed-a4a6-5540ffee3ed0)
-where X is the input and Xhat is the reconstructed data.
+Formula for reconstruction error:![image](https://github.com/user-attachments/assets/2799ae0e-b634-4d50-be07-04f491216e36)
+
+
 
  Cosine Similarity:
 Cosine similarity is used to compare the generated vectors of different films:
+
 
 ![image](https://github.com/user-attachments/assets/5fbfdfca-1876-40aa-918c-125a380f2a8e)
