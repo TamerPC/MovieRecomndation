@@ -44,4 +44,7 @@ We have simple form where we can choose user, and write prefered genre and descr
 
 On "My films" side we can see movies which user marked as liked. And in the "Recomendations we show our recomendations from ML model"
 
-Ршгмкта
+## Motivation and Objective (Problem, Challenge)
+Motivation: The goal of this project is to build a film recommendation system that provides personalized suggestions based on the user's viewing history and preferences. Traditional recommendation systems often rely on collaborative filtering or content-based filtering, but the challenge is how to combine both methods effectively, particularly in a way that scales well and maintains accuracy.
+
+Objective: We aim to use machine learning, specifically autoencoders, to extract features from films, represent them in a lower-dimensional vector space, and compare these vectors using cosine similarity to recommend similar films.
