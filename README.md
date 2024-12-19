@@ -36,3 +36,5 @@ backend written on Flask.
 We have simple form where we can choose user, and write prefered genre and description for movie.
 
 On "My films" side we can see movies which user marked as liked. And in the "Recomendations we show our recomendations from ML model"
+
+Ршгмкта
