@@ -56,7 +56,11 @@ Originality: This project combines autoencoders for feature extraction with a cu
 ## Design Architecture
 
 Data Collection: We gather film data including title, genre, description, director, cast, etc.
+
 Preprocessing: Tokenization and vectorization of film descriptions using a custom tokenizer.
+
 Encoder: An autoencoder architecture is trained to extract features and compress them into a fixed-length vector.
+
 Recommendation Generation: The model uses cosine similarity to compare films and recommend similar ones based on the user’s viewing history.
+
 Backend: The backend is built using Flask, which handles user requests and interacts with the trained model to generate recommendations.
