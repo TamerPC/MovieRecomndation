@@ -2,6 +2,7 @@
 ## python version 3.11.10
 
 ```pip install -r requirements.txt```
+### 
 Team memebers
 Tugambayeva Aruzhan
 Lyailya Dzhumagulova 
@@ -9,6 +10,7 @@ Aitzhanov Sultan
 Vyacheslav Popov
 Tamerlan Kabdolla 
 ## Main statements
+
 
 ### Model architecture is VAE
 
