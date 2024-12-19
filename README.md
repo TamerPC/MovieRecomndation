@@ -53,7 +53,8 @@ Related Work: There are many approaches to film recommendation systems. Collabor
 
 Originality: This project combines autoencoders for feature extraction with a custom-built tokenizer for text processing, offering a unique approach to vectorizing film descriptions. Additionally, the backend is powered by Flask, allowing for a simple user interface to interact with the model and receive real-time recommendations.
 
-##Design Architecture
+## Design Architecture
+
 Data Collection: We gather film data including title, genre, description, director, cast, etc.
 Preprocessing: Tokenization and vectorization of film descriptions using a custom tokenizer.
 Encoder: An autoencoder architecture is trained to extract features and compress them into a fixed-length vector.
