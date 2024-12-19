@@ -19,6 +19,9 @@ RUN apt-get update && \
 
 # Copy the requirements file
 COPY requirements.txt .
+COPY data/ /app/data/
+COPY users.json /app/
+
 
 # Upgrade pip
 RUN pip install --no-cache-dir --upgrade pip
