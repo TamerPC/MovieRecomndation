@@ -48,3 +48,14 @@ On "My films" side we can see movies which user marked as liked. And in the "Rec
 Motivation: The goal of this project is to build a film recommendation system that provides personalized suggestions based on the user's viewing history and preferences. Traditional recommendation systems often rely on collaborative filtering or content-based filtering, but the challenge is how to combine both methods effectively, particularly in a way that scales well and maintains accuracy.
 
 Objective: We aim to use machine learning, specifically autoencoders, to extract features from films, represent them in a lower-dimensional vector space, and compare these vectors using cosine similarity to recommend similar films.
+## Related Work and Originality
+Related Work: There are many approaches to film recommendation systems. Collaborative filtering, such as the one used by Netflix, leverages user-item interaction matrices to suggest films based on user preferences. Content-based filtering uses film features like genre, director, or description to make recommendations. More recently, autoencoders have been used for feature extraction, and cosine similarity has been applied to measure the closeness between films.
+
+Originality: This project combines autoencoders for feature extraction with a custom-built tokenizer for text processing, offering a unique approach to vectorizing film descriptions. Additionally, the backend is powered by Flask, allowing for a simple user interface to interact with the model and receive real-time recommendations.
+
+##Design Architecture
+Data Collection: We gather film data including title, genre, description, director, cast, etc.
+Preprocessing: Tokenization and vectorization of film descriptions using a custom tokenizer.
+Encoder: An autoencoder architecture is trained to extract features and compress them into a fixed-length vector.
+Recommendation Generation: The model uses cosine similarity to compare films and recommend similar ones based on the user’s viewing history.
+Backend: The backend is built using Flask, which handles user requests and interacts with the trained model to generate recommendations.
