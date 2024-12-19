@@ -67,5 +67,5 @@ def format_vector(text, genre):
 
 if __name__ == '__main__':
     # print()
-    port = int(os.environ.get("PORT", 8080))  # Default to 8080 if PORT is not set
+    port = 8080  # Default to 8080 if PORT is not set
     app.run(host="0.0.0.0", port=port)
