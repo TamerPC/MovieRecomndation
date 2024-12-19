@@ -1,5 +1,5 @@
-# Use the official Python image as a base
-FROM python:3.9-slim
+# Use Python 3.10 base image
+FROM python:3.10-slim
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1 \
@@ -20,6 +20,9 @@ RUN apt-get update && \
 # Copy the requirements file
 COPY requirements.txt .
 
+# Upgrade pip
+RUN pip install --no-cache-dir --upgrade pip
+
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
@@ -31,3 +34,4 @@ EXPOSE 5000
 
 # Command to run the application
 CMD ["python", "app.py"]
+
