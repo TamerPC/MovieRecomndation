@@ -4,11 +4,11 @@
 ```pip install -r requirements.txt```
 ### Team memebers:
 
-Tugambayeva Aruzhan
-Lyailya Dzhumagulova 
-Aitzhanov Sultan
-Vyacheslav Popov
-Tamerlan Kabdolla 
+Tugambayeva Aruzhan;
+Lyailya Dzhumagulova;
+Aitzhanov Sultan;
+Vyacheslav Popov;
+Tamerlan Kabdolla. 
 ## Main statements
 
 
