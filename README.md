@@ -1,7 +1,7 @@
 # Machine learning based simple movie recomendation system
 ## python version 3.11.10
 
-```pip install -r requirements.txt```
+```pip install -r requirements.txt``` 
 ### Team memebers:
 
 Tugambayeva Aruzhan;
