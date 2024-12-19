@@ -6,7 +6,7 @@
 
 Tugambayeva Aruzhan;
 Lyailya Dzhumagulova;
-Aitzhanov Sultan;
+Aitzhanov Sultan; 
 Vyacheslav Popov;
 Tamerlan Kabdolla. 
 ## Main statements
