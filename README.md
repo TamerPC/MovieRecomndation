@@ -82,3 +82,10 @@ Cosine similarity is used to compare the generated vectors of different films:
 
 
 ![image](https://github.com/user-attachments/assets/5fbfdfca-1876-40aa-918c-125a380f2a8e)
+
+Recommendation Generation:
+
+Based on the user's past whatched films, the system computes the cosine similarity of the user's film vectors with all available films in the dataset. Films with the highest similarity scores are recommended.
+
+Coding:
+You can find files with code by  this github link: https://github.com/TamerPC/MovieRecomndation
