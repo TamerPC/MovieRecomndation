@@ -101,4 +101,12 @@ Real-time Recommendations: The system is able to provide accurate recommendation
 
 Kullback-Leibler (KL) Divergence: KL Divergence was used during the training phase to measure how much the predicted distribution deviates from the actual data distribution. Minimizing KL Divergence ensures that the autoencoder's encoded features are close to the original data distribution, which improves the accuracy of the model.
 
+Training/Testing Loss: The model’s performance during training and testing was evaluated using mean squared error (MSE) as the loss function.
+
+![image](https://github.com/user-attachments/assets/d7cbe1ff-e5cc-432a-bf56-946ff7724a5b)
+
+## Conclusion
+
+
+
 
