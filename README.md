@@ -64,3 +64,14 @@ Encoder: An autoencoder architecture is trained to extract features and compress
 Recommendation Generation: The model uses cosine similarity to compare films and recommend similar ones based on the user’s viewing history.
 
 Backend: The backend is built using Flask, which handles user requests and interacts with the trained model to generate recommendations.
+
+## Detailed Algorithm or Functions
+
+Encoder Model:
+
+Input: Film data (title, description, etc.).
+Process: The encoder learns to map the input data into a lower-dimensional space by minimizing reconstruction error.
+Output: A fixed-length vector representing the film.
+
+Formula for reconstruction error:![image](https://github.com/user-attachments/assets/1b9c9198-50da-42ed-a4a6-5540ffee3ed0)
+ 
