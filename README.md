@@ -107,6 +107,32 @@ Training/Testing Loss: The model’s performance during training and testing was
 
 ## Conclusion
 
+In this project, we developed a personalized film recommendation system using a machine learning approach that combines autoencoders for feature extraction and cosine similarity for similarity-based recommendations.
 
+The encoder successfully transformed high-dimensional film data into compact, meaningful vectors, allowing us to represent films in a multidimensional vector space. By using cosine similarity, we could accurately measure the closeness between films, enabling precise and relevant recommendations.
+
+Our model demonstrated excellent performance with a 99.75% accuracy on test data. The system was deployed on a user-friendly website, allowing users to view their liked films, select preferred genres or descriptions, and receive real-time recommendations tailored to their preferences.
+
+## Reference
+
+Сафронов, А. (2022, September 14). Искусственный интеллект в поиске. Как Яндекс научился применять нейронные сети, чтобы искать по смыслу, а не по словам. Хабр. https://habr.com/ru/companies/yandex/articles/314222/
+
+Search | Kaggle. (n.d.). https://www.kaggle.com/search?q=Movie+Recommendation+System
+
+## Roles of Members
+Team Lead / Data Scientist / Senior ML Developer: Tamerlan Kabdolla -  
+
+Senior Data Miner and preparation / Data Analytic: Aitzhanov Sultan
+
+Senior Data Scientist / Data Miner: Vyacheslav Popov 
+
+Senior Web Developer / Data Miner: Tugambayeva Aruzhan
+
+Senior Project Manager / Data Miner: 
+Lyailya Dzhumagulova 
+
+## Bonus
+
+![image](https://github.com/user-attachments/assets/5ff9da3f-3480-469e-986a-902c82df2aa2)
 
 
