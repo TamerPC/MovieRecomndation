@@ -103,7 +103,7 @@ Kullback-Leibler (KL) Divergence: KL Divergence was used during the training pha
 
 Training/Testing Loss: The model’s performance during training and testing was evaluated using the loss function.
 
-![image](https://github.com/user-attachments/assets/d7cbe1ff-e5cc-432a-bf56-946ff7724a5b)
+
 
 ## Conclusion
 
