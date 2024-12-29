@@ -33,7 +33,7 @@ Based on this data, we will issue recommendations based on the films that the us
 
 ## Data format 
 
-I use own tokenizer for text data representation.
+We use own tokenizer for text data representation.
 For example string like: "hello : – my friendOOO" would be like: [877, 1320, 1744, 9374, 11894, 2834, 672, 986, 1530, 1650, 15] in number form.
 
 Each token has max length 2 characters. It can be longer if you want, but in our case i think 2 chars pretty enough.
