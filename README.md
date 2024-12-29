@@ -14,7 +14,8 @@ Tamerlan Kabdolla.
 
 ### Model architecture is VAE
 
-![alt text](https://www.mdpi.com/applsci/applsci-13-12413/article_deploy/html/images/applsci-13-12413-g001.png)
+![image](https://github.com/user-attachments/assets/3b392b96-eab9-4cb3-af9b-043e4fec92c4)
+
 
 The essence of the model is to train it to find the main features from the data and form them into a vector of limited length
 and restore the original data from it.
