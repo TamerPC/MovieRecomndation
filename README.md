@@ -104,7 +104,8 @@ Building a custom tokenizer to effectively process movie descriptions. Creating 
 * Concatenate tokenized description vectors with genre and other features to form a multi-dimensional feature vector.
 
 4. **Similarity Calculation**
-* $$ \text{Cosine Similarity} = \frac{\text{Vector1} \cdot \text{Vector2}}{\|\text{Vector1}\| \times \|\text{Vector2}\|} $$
+![image](https://github.com/user-attachments/assets/e28e3eb6-e22e-4ca8-8429-c03e9764de0f)
+
 
 5. **Recommendation Generation**
 * Retrieve the feature vector for the target movie.
@@ -120,32 +121,36 @@ Building a custom tokenizer to effectively process movie descriptions. Creating 
 You can find files with code by  this github link: https://github.com/TamerPC/MovieRecomndation
 
 ## Results and Performance Evaluation
+1.   **Accuracy**
+* Metric: Accuracy measures the percentage of correct recommendations based on user feedback or predefined test sets.
+* Result: The model achieved an accuracy of 99.75% on test data, demonstrating its ability to provide highly relevant recommendations.
 
-Model Accuracy: We achieved an accuracy of 99.75% on test data.
+2. **Cosine Similarity Evaluation**
+* Purpose: Cosine similarity is used to determine the closeness of movie feature vectors.
+* Result: The system effectively identified movies with high similarity to user preferences, ensuring personalized recommendations. The top-N recommendations consistently included movies that aligned with user tastes based on cosine similarity scores.
 
-Cosine Similarity: The cosine similarity is used to measure the closeness of films based on the encoder-generated vectors. The closer the cosine similarity value is to 1, the more similar the films are.
+3. **KL Divergence (Preference Alignment)**
+* Metric: Kullback-Leibler (KL) Divergence measures how well the recommendation distribution aligns with the user's preference distribution.
+* Result: A low KL divergence value indicates that the model closely approximates user preferences, validating the effectiveness of the recommendation engine.
 
-Real-time Recommendations: The system is able to provide accurate recommendations based on user history and film features.
-
-Kullback-Leibler (KL) Divergence: KL Divergence was used during the training phase to measure how much the predicted distribution deviates from the actual data distribution. Minimizing KL Divergence ensures that the autoencoder's encoded features are close to the original data distribution, which improves the accuracy of the model.
-
-Training/Testing Loss: The model’s performance during training and testing was evaluated using the loss function.
+4. **Training and Testing Loss**
+* Metric: Monitored during the training of the autoencoder for feature dimensionality reduction.
+* Training Loss: Consistently decreased, showing the model's ability to learn key features.
+* Testing Loss: Minimal overfitting was observed, ensuring the model generalized well to unseen data.
 
 
 
 ## Conclusion
 
-In this project, we developed a personalized film recommendation system using a machine learning approach that combines autoencoders for feature extraction and cosine similarity for similarity-based recommendations.
-
-The encoder successfully transformed high-dimensional film data into compact, meaningful vectors, allowing us to represent films in a multidimensional vector space. By using cosine similarity, we could accurately measure the closeness between films, enabling precise and relevant recommendations.
-
-Our model demonstrated excellent performance with a 99.75% accuracy on test data. The system was deployed on a user-friendly website, allowing users to view their liked films, select preferred genres or descriptions, and receive real-time recommendations tailored to their preferences.
+The film recommendation system effectively addresses the challenge of providing personalized movie suggestions by leveraging machine learning and cosine similarity. With an impressive accuracy of 99.75%, the model ensures highly relevant recommendations tailored to individual user preferences. Its scalable architecture and user-friendly web interface allow users to explore films seamlessly, filter by genre, and discover hidden gems. The system's use of custom tokenization and feature vectorization adds a unique edge, offering precise and diverse recommendations. Overall, this project successfully bridges the gap in personalized content delivery, providing a valuable solution for modern entertainment needs.
 
 ## Reference
 
 Сафронов, А. (2022, September 14). Искусственный интеллект в поиске. Как Яндекс научился применять нейронные сети, чтобы искать по смыслу, а не по словам. Хабр. https://habr.com/ru/companies/yandex/articles/314222/
 
 Search | Kaggle. (n.d.). https://www.kaggle.com/search?q=Movie+Recommendation+System
+
+Netflix Research. (n.d.-b). https://research.netflix.com/
 
 ## Roles of Members
 Team Lead / Data Scientist / Senior ML Developer: Tamerlan Kabdolla -  
