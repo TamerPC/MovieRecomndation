@@ -155,13 +155,13 @@ Netflix Research. (n.d.-b). https://research.netflix.com/
 ## Roles of Members
 Team Lead / Data Scientist / Senior ML Developer: Tamerlan Kabdolla -  
 
-Senior Data Miner and preparation / Data Analytic: Aitzhanov Sultan
+Data Miner and preparation / Data Analytic: Aitzhanov Sultan
 
-Senior Data Scientist / Data Miner: Vyacheslav Popov 
+Data Scientist / Data Miner: Vyacheslav Popov 
 
-Senior Web Developer / Data Miner: Tugambayeva Aruzhan
+Web Developer / Data Miner: Tugambayeva Aruzhan
 
-Senior Project Manager / Data Miner: 
+Project Manager / Data Miner: 
 Lyailya Dzhumagulova 
 
 ## Bonus
