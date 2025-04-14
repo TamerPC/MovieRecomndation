@@ -1,4 +1,5 @@
 # Machine learning based simple movie recomendation system
+## Solution based on Variable Auto Encoder
 ## python version 3.11.10
 
 ```pip install -r requirements.txt``` 
